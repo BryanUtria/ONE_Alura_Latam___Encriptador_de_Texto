@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="imagenes/Frame 6.png" alt="logo de alura" >
+        </header>
+        <main>
+            <section class="izquierda">
+                <textarea class="text-area" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                    <h6 class="informacion"><img class="i-exclamacion" src="imagenes/exclamacion.png" alt="Signo de exclamacion">Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="derecha">
+                <textarea class="mensaje"></textarea>
+                <div class="Texto-Mensaje">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <div class="copiar">
+                    <button class="btn-copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="Mensaje_Final">Implementado por Brayan Steven Castelblanco Utria para ONE(Oracle Next Education) - Alura Latam</p>
+            <a href="https://www.linkedin.com/in/brayan-castelblanco"><img src="imagenes/Linkedin.png"></a>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
